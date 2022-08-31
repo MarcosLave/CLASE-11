@@ -22,79 +22,108 @@
 </head>
 
 <body>
+   <header>
    <!--BOOTSTRAP-->
       <!-- CONTAINER --ROW (INFINITAS) --COLUM (12)-->
    <div class=" container-fluid">
 
       <!-- LOGO + NAV-->
-          <div class="row">
-                <div class="col-12 col-lg-3">
+          <nav class="row">
+                <div class="col-12 col-lg-12">
 
                 </div>
-         <img src="assets/img/logo.jpg " alt="logo">
-          </div>
-
-      <nav>
-         <ul>
-             <li>
-                 <a href="views/nosotros.html">NOSOTROS</a>
-              </li>
-             <li>
-                 <a href="views/productos.html">PRODUCTOS</a>
-                 </li>
-             <li>
-                 <a href="views/servicios.html">SERVICIOS</a>
-                 </li>
-             <li>
-                 <a href="views/contacto.html">CONTACTO</a>
-              </li>
-         </ul>
-        </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="assets/img/arq.PNG">LOGO</a>
+                    <img src="assets/img/arq.PNG" alt="contacto" style=" width: 50px; height: 50px;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="views/productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="views/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            TODOS
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="views/productos.html">PRODUCTOS</a></li>
+                            <li><a class="dropdown-item" href="views/contacto.html">CONTACTO</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="views/servicios.html">SERVICIOS</a></li>
+                            <li><a class="dropdown-item" href="views/nosotros.html">NOSOTROS</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
 
     </header>
-       <!-- IMG-->
-          <div class="imgPrincipal border">
-        	 <a href="#"><img src="assets/img/header5.png" alt="imgPrincipal" style="width: 1350px; height: 400px"></a>
-          </div>
-          <!--ENCABEZADO-->
-          <div class="encabezado border">
-            <h1>  MyM ARQUITECTURA </h1>
-         </div>
+        
       
-      
-        <! --CONTENIDO-->
-        <div class="row">
-                        <div class="col">
-
+        <!--CONTENIDO carrusel-->
+        <content class="row">
+                         <div class="col-12 col-lg-12">
+                                  
                         </div>
-            <h2 class="tabla__encabezado">WELCOME TO...</h2>
-            <p>Cumplir el sueño de la casa propia es un ideal en todas las familias, pero en MyM Construcciones ese hecho que parecía inalcanzable se ha ido convirtiendo en una realidad para miles de familias. Cumpli tu Sueño. VIVIR donde lo soñas</p>
-          </div>
-        <!--IMG-->
-            <div class="img border">
-              <img src="assets/img/header2.png " alt="img" style="width: 300px; height: 300px;">
-            </div>
-          </div>       
-          
-       <hr>
-
-       <! --FOOTER-->
-          <div class="row">
-                           <div class="col">
-
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                           <div class="carousel-inner">
+                             <div class="carousel-item active">
+                               <img src="assets/img/headher.PNG" class="d-block w-100" alt="...">
+                             </div>
+                             <div class="carousel-item">
+                               <img src="assets/img/header2.PNG" class="d-block w-100" alt="...">
+                             </div>
+                             <div class="carousel-item">
+                               <img src="assets/img/header3.PNG" class="d-block w-100" alt="...">
+                             </div>
                            </div>
+                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                             <span class="visually-hidden">Previous</span>
+                           </button>
+                           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                             <span class="visually-hidden">Next</span>
+                           </button>
+                         </div>
 
-       	      <div class="logo">
-       	      	  <img src="assets/img/logo.jpg" alt="logo">
-       	      </div>
-       	      <div class="rrss">
-                    <h3>RRSS</h3>
-       	      	  <img src="assets/img/instagram.png" alt="rrss">
-       	      </div>
-       	      <div class="contacto">
-                    <h3>CONTACTO</h3>
-       	      	  <img src="assets/img/facebook.png" alt="contacto" style="height: 50px">
-       	      </div>
+       <!--ENCABEZADO-->                  
+       <main class="row">
+         <div class="col-12 col-lg-12"></div>
+                         <h1>M ARQUITECTURA</h1>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                         <p>DISEÑO MINIMALISTA: Se caracteriza por la simplicidad, líneas limpias y una paleta monocromática con el color utilizado como acento. Por lo general, combina un plano de planta abierto, mucha luz y muebles funcionales, y se centra en la forma, el color y la textura de solo un puñado de elementos esenciales.</p>
+                        </div>
+                  <div class="col-12 col-lg-4">
+                         <p>DISEÑO MODERNO: En otras palabras, el diseño moderno está conectado a la edad de las máquinas que se conoce desde las décadas de 1920 y 1950. Aunque, en la actualidad, el diseño moderno se refiere a cualquier tipo de diseño que ha sido sacado desde el siglo XX y que tiene que ver con la era moderna actual</p>
+                        </div>
+                  <div class="col-12 col-lg-4">
+                        <p>DISEÑO NORDICO: El diseño escandinavo o nórdico es el diseño de los países escandinavos o nórdicos, que se caracteriza por la simplicidad, el minimalismo y la funcionalidad que surgió a principios del siglo XX y que posteriormente floreció en los años 50 en Noruega, Suecia, Dinamarca, Finlandia e Islandia.</p>
+                        </div>      
+          <!--FOOTER-->
+          <footer class="row">
+            <div class="col-12 col-lg-4">LOGO</div>
+            <img src="assets/img/logo.jpg" alt="logo" style=" width: 50px; height: 50px;>
+             <div class="col-12 col-lg-4">RRSS</div>
+             <img src="assets/img/instagram.png" alt="rrss" style=" width: 50px; height: 50px;>
+                <div class="col-12 col-lg-4">CONTACTO</div>
+                <img src="assets/img/facebook.png" alt="contacto" style=" width: 50px; height: 50px;">
+            
                
               </footer>
               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

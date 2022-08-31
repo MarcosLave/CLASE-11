@@ -21,22 +21,56 @@
    </style>
 </head>
 <body>
-      <header class="navBackground">
-      	<! --logo-->
-        <div>
-        	 <a href="../index.html"><img src="../assets/img/header3.png" style="width: 700px; height:200px"></a>
-        </div>
-      	<! --nav-->
-        <nav>
-        	<! --listas no ordenadas-- >
-        	<ul>
-        		<! --cada elemento va a estar contenido en una li-->
-        	    <li><a href="../index.html">HOME</a></li>
-        	    <li><a href="nosotros.html">NOSOTROS</a></li>
-        	    <li><a href="productos.html">PRODUCTOS</a></li>
-        	    <li><a href="servicios.html">SERVICIOS</a></li>
-        	    <li><a href="contacto.html">CONTACTO</a></li>
-        </nav>
+   <header>
+      <!--BOOTSTRAP-->
+         <!-- CONTAINER --ROW (INFINITAS) --COLUM (12)-->
+      <div class=" container-fluid">
+   
+         <!-- LOGO + NAV-->
+             <nav class="row">
+                   <div class="col-12 col-lg-12">
+                   
+                   </div>
+                   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                     <div class="container-fluid">
+                       <a class="navbar-brand" href="assets/img/arq.PNG">LOGO</a>
+                       <img src="../assets/img/arq.PNG" alt="contacto" style=" width: 50px; height: 50px;">
+
+                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                           <li class="nav-item">
+                             <a class="nav-link active" aria-current="page" href="views/productos.html">PRODUCTOS</a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="views/servicios.html">SERVICIOS</a>
+                           </li>
+                           <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               TODOS
+                             </a>
+                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                               <li><a class="dropdown-item" href="views/productos.html">PRODUCTOS</a></li>
+                               <li><a class="dropdown-item" href="views/contacto.html">CONTACTO</a></li>
+                               <li><hr class="dropdown-divider"></li>
+                               <li><a class="dropdown-item" href="views/servicios.html">SERVICIOS</a></li>
+                               <li><a class="dropdown-item" href="views/nosotros.html">NOSOTROS</a></li>
+                             </ul>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link disabled">Disabled</a>
+                           </li>
+                         </ul>
+                         <form class="d-flex">
+                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                           <button class="btn btn-outline-success" type="submit">Search</button>
+                         </form>
+                       </div>
+                     </div>
+                   </nav>
+   
        </header>
         <! --apertura de contenido-- >
 
@@ -84,19 +118,16 @@
         <! --hr genera linea divisoria-- >
        <hr>
 
-        <footer class="border">
-
-               <div class="logo">
-                    <img src="../assets/img/logo.jpg" alt="logo">
-               </div>
-               <div class="rrss">
-                    <h3>RRSS</h3>
-                    <img src="../assets/img/instagram.png" alt="rrss">
-               </div>
-               <div class="contacto">
-                    <h3>CONTACTO</h3>
-                    <img src="../assets/img/facebook.png" alt="contacto" style="height: 50px">
-               </div>
+        
+<!--FOOTER-->
+         <footer class="row">
+            <div class="col-12 col-lg-4">LOGO</div>
+            <img src="../ssets/img/arq.png" alt="logo" style=" width: 50px; height: 50px;>
+             <div class="col-12 col-lg-4">RRSS</div>
+             <img src="../assets/img/instagram.png" alt="rrss" style=" width: 50px; height: 50px;>
+                <div class="col-12 col-lg-4">CONTACTO</div>
+                <img src="../assets/img/facebook.png" alt="contacto" style=" width: 50px; height: 50px;">
+            
                
               </footer>
               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
